@@ -13,6 +13,8 @@ const server = app.listen(port, (err) => {
     if (err) {
         return false;
     }
+
+    console.log(port + " is opened");
 });
 
 var io = require("socket.io")(server);
